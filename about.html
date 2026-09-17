@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Arcline Spatial Design Journal</title>
+  <meta name="description" content="About Arcline Spatial Design: independent editorial on architecture, interiors, and spatial design. Meet the editors and learn our mission.">
+  <meta name="author" content="Arcline Editorial">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.arclinespatial.com/about.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="About — Arcline Spatial Design Journal">
+  <meta property="og:description" content="Independent architecture and interior design journalism. Learn about our mission, editors, and editorial principles.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.arclinespatial.com/about.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About Arcline Spatial Design",
+      "description": "Independent architecture and interior design journal.",
+      "url": "https://www.arclinespatial.com/about.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Arcline Spatial Design"
+      }
+    }
+  </script>
+  <style>
+    /* ----- RESET & BASE (same as index) ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --font-serif: 'Georgia', 'Times New Roman', 'Palatino', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --color-bg: #fcfaf7;
+      --color-surface: #ffffff;
+      --color-ink: #1f1e1c;
+      --color-muted: #5f5d5a;
+      --color-border: #e4e1da;
+      --color-accent: #9b7b5e;
+      --color-accent-soft: #f0ebe4;
+      --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.04);
+      --radius: 4px;
+      --max-width: 1280px;
+      --content-width: 780px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--color-bg);
+      color: var(--color-ink);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    a {
+      color: var(--color-ink);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--color-accent);
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    /* ----- TYPOGRAPHY ----- */
+    h1, h2, h3, h4, h5 {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+    }
+
+    h4 {
+      font-size: 1.1rem;
+      font-family: var(--font-sans);
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 1.4rem;
+    }
+
+    .text-muted {
+      color: var(--color-muted);
+    }
+
+    .small-caps {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 600;
+      font-family: var(--font-sans);
+    }
+
+    /* ----- LAYOUT ----- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .layout-grid {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 56px;
+      align-items: start;
+    }
+
+    @media (max-width: 1024px) {
+      .layout-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+    }
+
+    /* ----- HEADER (same) ----- */
+    .site-header {
+      background: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+      padding: 20px 0 16px;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      font-family: var(--font-serif);
+    }
+
+    .brand-name {
+      font-size: 1.6rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: var(--color-ink);
+    }
+
+    .brand-dot {
+      width: 7px;
+      height: 7px;
+      background: var(--color-accent);
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 4px;
+    }
+
+    .brand-tagline {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--color-muted);
+      font-family: var(--font-sans);
+      font-weight: 500;
+    }
+
+    .nav-main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 18px;
+      align-items: center;
+    }
+
+    .nav-main a {
+      font-size: 0.9rem;
+      font-weight: 450;
+      color: var(--color-muted);
+      padding: 4px 0;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .nav-main a:hover {
+      color: var(--color-ink);
+      border-bottom-color: var(--color-accent);
+    }
+
+    .nav-main a.active {
+      color: var(--color-ink);
+      border-bottom-color: var(--color-accent);
+    }
+
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--color-border);
+      font-size: 1.2rem;
+      padding: 6px 12px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-family: var(--font-sans);
+      color: var(--color-ink);
+    }
+
+    @media (max-width: 820px) {
+      .nav-main {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding-top: 12px;
+        border-top: 1px solid var(--color-border);
+        margin-top: 8px;
+      }
+
+      .nav-main.open {
+        display: flex;
+      }
+
+      .nav-toggle {
+        display: block;
+      }
+
+      .header-inner {
+        position: relative;
+      }
+
+      .brand-tagline {
+        display: none;
+      }
+    }
+
+    /* ----- MAIN CONTENT ----- */
+    main {
+      padding: 48px 0 72px;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-weight: 600;
+      color: var(--color-accent);
+      margin-bottom: 8px;
+      font-family: var(--font-sans);
+    }
+
+    .section-heading {
+      font-size: 2rem;
+      margin-bottom: 28px;
+      letter-spacing: -0.02em;
+    }
+
+    .section-heading-small {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      letter-spacing: -0.01em;
+    }
+
+    /* ----- ABOUT PAGE SPECIFIC ----- */
+    .about-hero {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 48px 44px;
+      margin-bottom: 48px;
+      box-shadow: var(--shadow-card);
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about-hero-content h1 {
+      font-size: 2.6rem;
+      margin-bottom: 16px;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+    }
+
+    .about-hero-content p {
+      font-size: 1.05rem;
+      color: var(--color-muted);
+      line-height: 1.8;
+      margin-bottom: 0;
+    }
+
+    .about-hero-image {
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--color-accent-soft);
+    }
+
+    .about-hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      min-height: 260px;
+    }
+
+    @media (max-width: 800px) {
+      .about-hero {
+        grid-template-columns: 1fr;
+        padding: 32px 24px;
+        gap: 24px;
+      }
+      .about-hero-content h1 {
+        font-size: 1.9rem;
+      }
+    }
+
+    /* Mission / values cards */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 28px;
+      margin: 40px 0 48px;
+    }
+
+    .value-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 28px 26px;
+      box-shadow: var(--shadow-card);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+
+    .value-card:hover {
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.07);
+      transform: translateY(-2px);
+    }
+
+    .value-card .value-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+      display: block;
+      color: var(--color-accent);
+      font-weight: 300;
+      line-height: 1;
+    }
+
+    .value-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+    }
+
+    .value-card p {
+      font-size: 0.9rem;
+      color: var(--color-muted);
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    /* Team section */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 32px;
+      margin: 40px 0 48px;
+    }
+
+    .team-member {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 28px 22px 24px;
+      box-shadow: var(--shadow-card);
+      text-align: center;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+
+    .team-member:hover {
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.07);
+      transform: translateY(-2px);
+    }
+
+    .team-avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 16px;
+      background: var(--color-accent-soft);
+      border: 3px solid var(--color-border);
+    }
+
+    .team-member h3 {
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+
+    .team-member .role {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--color-accent);
+      font-weight: 600;
+      margin-bottom: 12px;
+      font-family: var(--font-sans);
+    }
+
+    .team-member p {
+      font-size: 0.85rem;
+      color: var(--color-muted);
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    /* Editorial statement */
+    .editorial-statement {
+      background: var(--color-surface);
+      border-left: 6px solid var(--color-accent);
+      border-radius: var(--radius);
+      padding: 32px 36px;
+      margin: 40px 0 48px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .editorial-statement p {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-style: italic;
+      line-height: 1.7;
+      color: #2e2d2b;
+      margin-bottom: 0;
+    }
+
+    .editorial-statement .attribution {
+      font-family: var(--font-sans);
+      font-style: normal;
+      font-size: 0.85rem;
+      color: var(--color-muted);
+      margin-top: 16px;
+      display: block;
+    }
+
+    /* Stats row */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin: 48px 0;
+      padding: 36px 0;
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-item .stat-number {
+      font-family: var(--font-serif);
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: var(--color-ink);
+      line-height: 1.1;
+      display: block;
+    }
+
+    .stat-item .stat-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--color-muted);
+      font-weight: 500;
+      margin-top: 6px;
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      .stats-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+      }
+    }
+
+    /* ----- SIDEBAR (same) ----- */
+    .sidebar {
+      position: sticky;
+      top: 100px;
+    }
+
+    .sidebar-widget {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 24px 22px;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .sidebar-widget h3 {
+      font-size: 1.05rem;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--color-accent-soft);
+    }
+
+    .sidebar-widget p {
+      font-size: 0.88rem;
+      color: var(--color-muted);
+      line-height: 1.6;
+    }
+
+    .sidebar-widget ul li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--color-border);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .sidebar-widget ul li:last-child {
+      border-bottom: none;
+    }
+
+    .sidebar-widget ul li a {
+      font-weight: 450;
+    }
+
+    .sidebar-widget ul li .meta-small {
+      font-size: 0.7rem;
+      color: var(--color-muted);
+      display: block;
+      margin-top: 2px;
+    }
+
+    .editor-box {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .editor-avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: var(--color-accent-soft);
+      flex-shrink: 0;
+    }
+
+    .editor-box .editor-info h4 {
+      font-size: 0.92rem;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .editor-box .editor-info p {
+      font-size: 0.8rem;
+      margin-bottom: 0;
+      color: var(--color-muted);
+    }
+
+    /* ----- FOOTER (same) ----- */
+    .site-footer {
+      background: var(--color-surface);
+      border-top: 1px solid var(--color-border);
+      padding: 56px 0 32px;
+      margin-top: 24px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand .brand-name {
+      font-size: 1.4rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.88rem;
+      color: var(--color-muted);
+      max-width: 300px;
+      margin-top: 12px;
+      line-height: 1.7;
+    }
+
+    .footer-col h4 {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      color: var(--color-ink);
+      margin-bottom: 16px;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+      font-size: 0.88rem;
+    }
+
+    .footer-col ul li a {
+      color: var(--color-muted);
+    }
+
+    .footer-col ul li a:hover {
+      color: var(--color-ink);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--color-border);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.78rem;
+      color: var(--color-muted);
+    }
+
+    .footer-bottom .legal-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 820px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 1.9rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    /* Utility */
+    .hidden {
+      display: none !important;
+    }
+
+    [id] {
+      scroll-margin-top: 90px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-name">Arcline</span>
+        <span class="brand-dot"></span>
+        <span class="brand-tagline">Spatial Design Journal</span>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰ Menu</button>
+      <nav class="nav-main" id="navMain" aria-label="Primary">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li> 
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main class="container">
+
+    <!-- About Hero -->
+    <section class="about-hero">
+      <div class="about-hero-content">
+        <span class="section-label">About Us</span>
+        <h1>Design journalism for people who care about how spaces feel.</h1>
+        <p>Arcline is an independent editorial publication devoted to architecture, interior design, and the quiet decisions that shape the built environment. We publish in-depth articles for homeowners, designers, and anyone who believes that good space is worth thinking about.</p>
+      </div>
+      <div class="about-hero-image">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Modern concrete and glass residence with cantilevered upper floor surrounded by trees" loading="eager">
+      </div>
+    </section>
+
+    <!-- Mission Statement -->
+    <section class="editorial-section" id="mission">
+      <span class="section-label">Our Mission</span>
+      <h2>Practical knowledge, free from industry hype.</h2>
+      <p>Most design media is either aspirational fantasy or thinly veiled advertising. We wanted something different: a publication that treats design as a practical discipline, grounded in proportion, light, function, and the quiet details that make a space feel right. Our articles are researched, tested against real projects, and written for people who want to understand not just what looks good, but why it works.</p>
+      <p>We believe that good design is not about expensive materials or trendy styles. It is about understanding how people move, gather, rest, and live. It is about the relationship between a window and a view, a door and a hallway, a rug and a conversation. These are the things we write about.</p>
+    </section>
+
+    <!-- Stats Row -->
+    <div class="stats-row">
+      <div class="stat-item">
+        <span class="stat-number">120+</span>
+        <span class="stat-label">In-depth articles</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">15</span>
+        <span class="stat-label">Expert contributors</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">40k</span>
+        <span class="stat-label">Monthly readers</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">0</span>
+        <span class="stat-label">Sponsored posts</span>
+      </div>
+    </div>
+
+    <!-- Values Grid -->
+    <section id="values">
+      <span class="section-label">What Guides Us</span>
+      <h2 class="section-heading">Editorial Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <span class="value-icon">◈</span>
+          <h3>Independence</h3>
+          <p>We do not accept sponsored content, paid placements, or affiliate commissions. Our recommendations are based on research and experience, not commercial relationships.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">◈</span>
+          <h3>Practicality</h3>
+          <p>Every article aims to answer a real question: how high to hang art, how wide a hallway should be, how to choose a material that ages well. We favor useful specificity over vague inspiration.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">◈</span>
+          <h3>Depth</h3>
+          <p>We take the time to explain the why behind the what. Our long-form guides are written to be read slowly, with attention to context, trade-offs, and the reasoning behind design decisions.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">◈</span>
+          <h3>Longevity</h3>
+          <p>We are less interested in trends than in principles that endure. The best design advice is still true ten years from now. We aim to write articles that remain useful over time.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial Statement -->
+    <div class="editorial-statement">
+      <p>“A room should feel like it has always been there — as if the walls grew around the furniture. Our job is to explain the principles that make that feeling possible.”</p>
+      <span class="attribution">— Elena Marchetti, Editor-in-Chief</span>
+    </div>
+
+    <!-- Team Section -->
+    <section id="team">
+      <span class="section-label">The Team</span>
+      <h2 class="section-heading">Who We Are</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img class="team-avatar" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face" alt="Portrait of Elena Marchetti" loading="lazy">
+          <h3>Elena Marchetti</h3>
+          <div class="role">Editor-in-Chief</div>
+          <p>Architect and writer based in Milan. Over 15 years of experience in residential and adaptive reuse projects. Elena founded Arcline to bring architectural thinking to a wider audience.</p>
+        </div>
+        <div class="team-member">
+          <img class="team-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" alt="Portrait of James Okafor" loading="lazy">
+          <h3>James Okafor</h3>
+          <div class="role">Senior Editor, Architecture</div>
+          <p>Practicing architect and educator. James writes about spatial logic, passive design, and the craft of drawing. He teaches at a London school of architecture.</p>
+        </div>
+        <div class="team-member">
+          <img class="team-avatar" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&crop=face" alt="Portrait of Sofia Lindqvist" loading="lazy">
+          <h3>Sofia Lindqvist</h3>
+          <div class="role">Materials Editor</div>
+          <p>Interior designer and material researcher based in Copenhagen. Sofia writes about stone, wood, textiles, and the ways surfaces age. She is passionate about honest materials.</p>
+        </div>
+        <div class="team-member">
+          <img class="team-avatar" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face" alt="Portrait of Marcus Chen" loading="lazy">
+          <h3>Marcus Chen</h3>
+          <div class="role">Contributing Writer, Interiors</div>
+          <p>Interior stylist and writer. Marcus covers lighting, furniture, and the art of layering texture. His work has appeared in several international design publications.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How We Work -->
+    <section class="editorial-section" id="how-we-work">
+      <span class="section-label">Process</span>
+      <h2>How We Work</h2>
+      <p>Every article begins with a question we genuinely want to answer. We research the topic, consult with practicing architects and designers, and test our conclusions against real projects. We do not publish anything we would not use in our own work.</p>
+      <p>Our editorial process is intentionally slow. We would rather publish one deeply useful article per week than five shallow ones. We fact-check dimensions, building codes, and material claims. When we are uncertain, we say so.</p>
+      <p>Arcline is reader-supported. We do not run display advertising or sponsored content. Our only revenue comes from optional membership, which gives readers access to our complete archive and a monthly print digest. This model keeps our editorial decisions independent.</p>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="editorial-section" id="contact-cta">
+      <span class="section-label">Get in Touch</span>
+      <h2>We welcome thoughtful questions and story ideas.</h2>
+      <p>If you have a question about a design problem, a correction, or an idea for an article, we would like to hear from you. Email us at <strong>hello@arclinespatial.com</strong>. We read every message, though we may not be able to respond individually.</p>
+      <p style="margin-top: 12px;"><a href="contact.html" style="font-weight: 500; border-bottom: 1px solid var(--color-accent); padding-bottom: 2px;">Visit our contact page →</a></p>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <span class="brand-name">Arcline</span>
+            <span class="brand-dot"></span>
+          </div>
+          <p>Independent architecture and interior design journalism. Published monthly from our studio in Copenhagen.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="index.html#interiors">Interior Design</a></li>
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="index.html#materials">Materials</a></li>
+            <li><a href="index.html#lighting">Lighting</a></li>
+            <li><a href="index.html#articles">Modern Homes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS Feed</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Arcline Spatial Design. All rights reserved.</span>
+        <div class="legal-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      'use strict';
+
+      // --- Mobile nav toggle ---
+      const navToggle = document.getElementById('navToggle');
+      const navMain = document.getElementById('navMain');
+      if (navToggle) {
+        navToggle.addEventListener('click', function() {
+          navMain.classList.toggle('open');
+        });
+      }
+
+      // --- Active nav link on scroll ---
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-main a');
+
+      window.addEventListener('scroll', function() {
+        let current = '';
+        sections.forEach(function(section) {
+          const sectionTop = section.offsetTop - 120;
+          if (window.scrollY >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+        navLinks.forEach(function(link) {
+          link.classList.remove('active');
+          const href = link.getAttribute('href');
+          if (href === '#' + current || (href === 'about.html' && current === '')) {
+            link.classList.add('active');
+          }
+        });
+      });
+
+      // Ensure "About" stays active by default on this page
+      // (Handled by the HTML class already, but scroll may override)
+      // We'll keep the active state on the About link unless another section is scrolled to.
+      // Simple approach: if no section is active, keep About active.
+      window.addEventListener('scroll', function() {
+        const aboutLink = document.querySelector('.nav-main a[href="about.html"]');
+        const anyActive = document.querySelector('.nav-main a.active');
+        if (!anyActive && aboutLink) {
+          aboutLink.classList.add('active');
+        }
+      });
+
+    })();
+  </script>
+</body>
+</html>

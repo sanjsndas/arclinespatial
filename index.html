@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arcline Spatial Design — Architecture & Interior Design Journal</title>
+  <meta name="description" content="Independent editorial on architecture, interior design, materials, lighting, and spatial planning. In-depth guides, modern home ideas, and practical design knowledge.">
+  <meta name="author" content="Arcline Editorial">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.arclinespatial.com/">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Arcline Spatial Design — Architecture & Interior Design Journal">
+  <meta property="og:description" content="In-depth articles on residential architecture, interiors, materials, lighting, and design principles.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.arclinespatial.com/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Arcline Spatial Design",
+      "description": "Independent architecture and interior design journal.",
+      "url": "https://www.arclinespatial.com/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Arcline Spatial Design"
+      }
+    }
+  </script>
+  <style>
+    /* ----- RESET & BASE ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --font-serif: 'Georgia', 'Times New Roman', 'Palatino', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --color-bg: #fcfaf7;
+      --color-surface: #ffffff;
+      --color-ink: #1f1e1c;
+      --color-muted: #5f5d5a;
+      --color-border: #e4e1da;
+      --color-accent: #9b7b5e;
+      --color-accent-soft: #f0ebe4;
+      --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.04);
+      --radius: 4px;
+      --max-width: 1280px;
+      --content-width: 780px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--color-bg);
+      color: var(--color-ink);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    a {
+      color: var(--color-ink);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--color-accent);
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    /* ----- TYPOGRAPHY ----- */
+    h1, h2, h3, h4, h5 {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+    }
+
+    h4 {
+      font-size: 1.1rem;
+      font-family: var(--font-sans);
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 1.4rem;
+    }
+
+    .text-muted {
+      color: var(--color-muted);
+    }
+
+    .small-caps {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 600;
+      font-family: var(--font-sans);
+    }
+
+    /* ----- LAYOUT ----- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .layout-grid {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 56px;
+      align-items: start;
+    }
+
+    @media (max-width: 1024px) {
+      .layout-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+    }
+
+    /* ----- HEADER ----- */
+    .site-header {
+      background: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+      padding: 20px 0 16px;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      font-family: var(--font-serif);
+    }
+
+    .brand-name {
+      font-size: 1.6rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: var(--color-ink);
+    }
+
+    .brand-dot {
+      width: 7px;
+      height: 7px;
+      background: var(--color-accent);
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 4px;
+    }
+
+    .brand-tagline {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--color-muted);
+      font-family: var(--font-sans);
+      font-weight: 500;
+    }
+
+    .nav-main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 18px;
+      align-items: center;
+    }
+
+    .nav-main a {
+      font-size: 0.9rem;
+      font-weight: 450;
+      color: var(--color-muted);
+      padding: 4px 0;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .nav-main a:hover {
+      color: var(--color-ink);
+      border-bottom-color: var(--color-accent);
+    }
+
+    .nav-main a.active {
+      color: var(--color-ink);
+      border-bottom-color: var(--color-accent);
+    }
+
+    /* Mobile nav toggle */
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--color-border);
+      font-size: 1.2rem;
+      padding: 6px 12px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-family: var(--font-sans);
+      color: var(--color-ink);
+    }
+
+    @media (max-width: 820px) {
+      .nav-main {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding-top: 12px;
+        border-top: 1px solid var(--color-border);
+        margin-top: 8px;
+      }
+
+      .nav-main.open {
+        display: flex;
+      }
+
+      .nav-toggle {
+        display: block;
+      }
+
+      .header-inner {
+        position: relative;
+      }
+
+      .brand-tagline {
+        display: none;
+      }
+    }
+
+    /* ----- SEARCH BAR (in header area) ----- */
+    .search-row {
+      margin-top: 16px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 240px;
+      display: flex;
+      align-items: center;
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: 40px;
+      padding: 4px 6px 4px 20px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .search-box:focus-within {
+      border-color: var(--color-accent);
+      box-shadow: 0 0 0 3px rgba(155, 123, 94, 0.08);
+    }
+
+    .search-box input {
+      border: none;
+      background: transparent;
+      padding: 10px 8px 10px 0;
+      font-size: 0.95rem;
+      width: 100%;
+      outline: none;
+      font-family: var(--font-sans);
+      color: var(--color-ink);
+    }
+
+    .search-box input::placeholder {
+      color: #a6a29b;
+      font-weight: 350;
+    }
+
+    .search-box button {
+      background: var(--color-ink);
+      border: none;
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      cursor: pointer;
+      transition: background 0.15s;
+      font-family: var(--font-sans);
+      white-space: nowrap;
+    }
+
+    .search-box button:hover {
+      background: var(--color-accent);
+    }
+
+    .filter-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .filter-pills button {
+      background: transparent;
+      border: 1px solid var(--color-border);
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-size: 0.78rem;
+      font-weight: 450;
+      color: var(--color-muted);
+      cursor: pointer;
+      transition: all 0.15s;
+      font-family: var(--font-sans);
+      letter-spacing: 0.01em;
+    }
+
+    .filter-pills button:hover {
+      border-color: var(--color-accent);
+      color: var(--color-ink);
+      background: var(--color-accent-soft);
+    }
+
+    .filter-pills button.active {
+      background: var(--color-ink);
+      color: #fff;
+      border-color: var(--color-ink);
+    }
+
+    /* ----- MAIN CONTENT ----- */
+    main {
+      padding: 48px 0 72px;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-weight: 600;
+      color: var(--color-accent);
+      margin-bottom: 8px;
+      font-family: var(--font-sans);
+    }
+
+    .section-heading {
+      font-size: 2rem;
+      margin-bottom: 28px;
+      letter-spacing: -0.02em;
+    }
+
+    .section-heading-small {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      letter-spacing: -0.01em;
+    }
+
+    /* Featured article */
+    .featured-article {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 48px;
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      transition: box-shadow 0.2s;
+    }
+
+    .featured-article:hover {
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    .featured-image {
+      min-height: 340px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .featured-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      min-height: 340px;
+    }
+
+    .featured-content {
+      padding: 36px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .featured-content .category-tag {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--color-accent);
+      font-weight: 600;
+      margin-bottom: 10px;
+      font-family: var(--font-sans);
+    }
+
+    .featured-content h2 {
+      font-size: 1.85rem;
+      margin-bottom: 16px;
+      line-height: 1.25;
+    }
+
+    .featured-content .excerpt {
+      color: var(--color-muted);
+      font-size: 1rem;
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+
+    .meta-line {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 0.78rem;
+      color: var(--color-muted);
+      font-family: var(--font-sans);
+      flex-wrap: wrap;
+    }
+
+    .meta-line .dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--color-border);
+    }
+
+    @media (max-width: 700px) {
+      .featured-article {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-image img {
+        min-height: 220px;
+      }
+
+      .featured-content {
+        padding: 28px 24px;
+      }
+
+      .featured-content h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    /* Article cards grid */
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 28px;
+      margin-bottom: 48px;
+    }
+
+    .article-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      transition: box-shadow 0.2s, transform 0.2s;
+      display: flex;
+      flex-direction: column;
+      cursor: default;
+    }
+
+    .article-card:hover {
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.07);
+      transform: translateY(-2px);
+    }
+
+    .article-card .card-image {
+      height: 200px;
+      overflow: hidden;
+      background: var(--color-accent-soft);
+    }
+
+    .article-card .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .article-card:hover .card-image img {
+      transform: scale(1.02);
+    }
+
+    .article-card .card-body {
+      padding: 22px 20px 24px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .article-card .card-body .category-tag {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--color-accent);
+      font-weight: 600;
+      margin-bottom: 8px;
+      font-family: var(--font-sans);
+    }
+
+    .article-card .card-body h3 {
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+      line-height: 1.35;
+    }
+
+    .article-card .card-body .excerpt {
+      font-size: 0.88rem;
+      color: var(--color-muted);
+      line-height: 1.6;
+      margin-bottom: 16px;
+      flex: 1;
+    }
+
+    .article-card .card-body .meta-line {
+      font-size: 0.72rem;
+      margin-top: auto;
+    }
+
+    /* Long-form article section */
+    .long-form-article {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 40px 44px;
+      margin-bottom: 40px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .long-form-article h2 {
+      font-size: 1.9rem;
+      margin-bottom: 8px;
+    }
+
+    .long-form-article .article-meta {
+      font-size: 0.8rem;
+      color: var(--color-muted);
+      margin-bottom: 24px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+      font-family: var(--font-sans);
+    }
+
+    .long-form-article p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #2e2d2b;
+    }
+
+    .long-form-article h3 {
+      font-size: 1.35rem;
+      margin: 32px 0 14px;
+    }
+
+    .long-form-article h4 {
+      font-size: 1.05rem;
+      margin: 24px 0 10px;
+      font-family: var(--font-sans);
+      font-weight: 600;
+    }
+
+    .long-form-article ul, .long-form-article ol {
+      margin: 0 0 24px 24px;
+      padding-left: 8px;
+    }
+
+    .long-form-article ul li, .long-form-article ol li {
+      margin-bottom: 8px;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #2e2d2b;
+    }
+
+    .long-form-article ul {
+      list-style: disc;
+    }
+
+    .long-form-article ol {
+      list-style: decimal;
+    }
+
+    .long-form-article img {
+      margin: 28px 0 18px;
+      border-radius: var(--radius);
+      width: 100%;
+      height: auto;
+    }
+
+    .long-form-article .img-caption {
+      font-size: 0.78rem;
+      color: var(--color-muted);
+      margin-top: -12px;
+      margin-bottom: 24px;
+      font-style: italic;
+      font-family: var(--font-sans);
+    }
+
+    .pull-quote {
+      border-left: 4px solid var(--color-accent);
+      padding: 8px 0 8px 24px;
+      margin: 28px 0;
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-style: italic;
+      color: #3a3835;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      .long-form-article {
+        padding: 28px 22px;
+      }
+      .long-form-article h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    /* ----- SIDEBAR ----- */
+    .sidebar {
+      position: sticky;
+      top: 100px;
+    }
+
+    .sidebar-widget {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 24px 22px;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .sidebar-widget h3 {
+      font-size: 1.05rem;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--color-accent-soft);
+    }
+
+    .sidebar-widget p {
+      font-size: 0.88rem;
+      color: var(--color-muted);
+      line-height: 1.6;
+    }
+
+    .sidebar-widget ul li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--color-border);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .sidebar-widget ul li:last-child {
+      border-bottom: none;
+    }
+
+    .sidebar-widget ul li a {
+      font-weight: 450;
+    }
+
+    .sidebar-widget ul li .meta-small {
+      font-size: 0.7rem;
+      color: var(--color-muted);
+      display: block;
+      margin-top: 2px;
+    }
+
+    .editor-box {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .editor-avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: var(--color-accent-soft);
+      flex-shrink: 0;
+    }
+
+    .editor-box .editor-info h4 {
+      font-size: 0.92rem;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .editor-box .editor-info p {
+      font-size: 0.8rem;
+      margin-bottom: 0;
+      color: var(--color-muted);
+    }
+
+    /* ----- FAQ SECTION ----- */
+    .faq-section {
+      margin: 56px 0 40px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--color-border);
+      padding: 4px 0;
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 18px 0;
+      font-size: 1.05rem;
+      font-family: var(--font-serif);
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--color-ink);
+      transition: color 0.15s;
+    }
+
+    .faq-question:hover {
+      color: var(--color-accent);
+    }
+
+    .faq-question .icon {
+      font-size: 1.4rem;
+      color: var(--color-accent);
+      font-weight: 300;
+      transition: transform 0.2s;
+      line-height: 1;
+    }
+
+    .faq-question.open .icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.2s;
+      padding: 0 0 0;
+    }
+
+    .faq-answer.open {
+      max-height: 400px;
+      padding: 0 0 20px;
+    }
+
+    .faq-answer p {
+      font-size: 0.95rem;
+      color: var(--color-muted);
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    /* ----- NEWSLETTER ----- */
+    .newsletter-section {
+      background: var(--color-ink);
+      color: #f0ede8;
+      border-radius: var(--radius);
+      padding: 48px 44px;
+      margin: 56px 0 48px;
+      text-align: center;
+    }
+
+    .newsletter-section h2 {
+      color: #fff;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .newsletter-section p {
+      color: #b8b3ab;
+      font-size: 0.95rem;
+      max-width: 520px;
+      margin: 0 auto 24px;
+    }
+
+    .newsletter-form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      min-width: 220px;
+      padding: 14px 20px;
+      border-radius: 40px;
+      border: 1px solid #3a3835;
+      background: #2a2825;
+      color: #fff;
+      font-size: 0.9rem;
+      outline: none;
+      font-family: var(--font-sans);
+    }
+
+    .newsletter-form input::placeholder {
+      color: #7a7670;
+    }
+
+    .newsletter-form input:focus {
+      border-color: var(--color-accent);
+    }
+
+    .newsletter-form button {
+      background: var(--color-accent);
+      border: none;
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      transition: background 0.15s;
+      font-family: var(--font-sans);
+    }
+
+    .newsletter-form button:hover {
+      background: #b08d6b;
+    }
+
+    /* ----- ABOUT / CONTACT / PRIVACY / TERMS / COOKIES (editorial boxes) ----- */
+    .editorial-section {
+      margin: 48px 0;
+    }
+
+    .editorial-section h2 {
+      font-size: 1.7rem;
+      margin-bottom: 18px;
+    }
+
+    .editorial-section p {
+      font-size: 0.95rem;
+      color: var(--color-muted);
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    .editorial-section h3 {
+      font-size: 1.15rem;
+      margin: 28px 0 12px;
+    }
+
+    .editorial-section ul {
+      list-style: disc;
+      margin-left: 24px;
+      margin-bottom: 20px;
+    }
+
+    .editorial-section ul li {
+      font-size: 0.95rem;
+      color: var(--color-muted);
+      margin-bottom: 6px;
+      line-height: 1.7;
+    }
+
+    /* ----- FOOTER ----- */
+    .site-footer {
+      background: var(--color-surface);
+      border-top: 1px solid var(--color-border);
+      padding: 56px 0 32px;
+      margin-top: 24px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand .brand-name {
+      font-size: 1.4rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.88rem;
+      color: var(--color-muted);
+      max-width: 300px;
+      margin-top: 12px;
+      line-height: 1.7;
+    }
+
+    .footer-col h4 {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      color: var(--color-ink);
+      margin-bottom: 16px;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+      font-size: 0.88rem;
+    }
+
+    .footer-col ul li a {
+      color: var(--color-muted);
+    }
+
+    .footer-col ul li a:hover {
+      color: var(--color-ink);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--color-border);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.78rem;
+      color: var(--color-muted);
+    }
+
+    .footer-bottom .legal-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 820px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .newsletter-section {
+        padding: 32px 22px;
+      }
+      h1 {
+        font-size: 1.9rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    /* Utility */
+    .hidden {
+      display: none !important;
+    }
+
+    .no-results {
+      padding: 40px 0;
+      text-align: center;
+      color: var(--color-muted);
+      font-size: 1rem;
+      font-style: italic;
+    }
+
+    /* Scroll margin for anchor links */
+    [id] {
+      scroll-margin-top: 90px;
+    }
+
+    /* Divider */
+    .divider {
+      border: none;
+      border-top: 1px solid var(--color-border);
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-name">Arcline</span>
+        <span class="brand-dot"></span>
+        <span class="brand-tagline">Spatial Design Journal</span>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰ Menu</button>
+      <nav class="nav-main" id="navMain" aria-label="Primary">
+          <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms Of Privacy</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+					<li><a href="cookies.html">Cookies Policy</a></li> 
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="search-row">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search articles, topics, materials…" aria-label="Search articles">
+          <button id="searchBtn" aria-label="Search">Search</button>
+        </div>
+      </div>
+      <div class="filter-pills" id="filterPills">
+        <button class="active" data-category="all">All</button>
+        <button data-category="Interior Design">Interior Design</button>
+        <button data-category="Architecture">Architecture</button>
+        <button data-category="Home Design">Home Design</button>
+        <button data-category="Materials">Materials</button>
+        <button data-category="Space Planning">Space Planning</button>
+        <button data-category="Lighting">Lighting</button>
+        <button data-category="Furniture">Furniture</button>
+        <button data-category="Modern Homes">Modern Homes</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main class="container">
+
+    <!-- Featured Article -->
+    <section id="featured">
+      <span class="section-label">Featured</span>
+      <article class="featured-article" data-category="Architecture">
+        <div class="featured-image">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80" alt="Modern concrete and glass residence with cantilevered upper floor surrounded by trees" loading="eager">
+        </div>
+        <div class="featured-content">
+          <span class="category-tag">Architecture</span>
+          <h2>The Quiet Power of Restraint: Why Less Is Still More in Residential Architecture</h2>
+          <p class="excerpt">In an era of visual noise, the most compelling homes are those that master subtraction. We explore how restraint in form, material, and detail creates spaces of lasting resonance.</p>
+          <div class="meta-line">
+            <span>By Elena Marchetti</span>
+            <span class="dot"></span>
+            <span>14 min read</span>
+            <span class="dot"></span>
+            <span>March 2026</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Articles Grid -->
+    <div class="layout-grid">
+      <div class="main-column">
+        <section id="articles">
+          <span class="section-label">Latest Articles</span>
+          <h2 class="section-heading">From the Journal</h2>
+          <div class="article-grid" id="articleGrid">
+
+            <!-- Card 1 -->
+            <article class="article-card" data-category="Interior Design">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80" alt="Warm minimalist living room with linen sofa, wooden coffee table, and large window" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Interior Design</span>
+                <h3>The Art of Layering Texture in a Minimalist Interior</h3>
+                <p class="excerpt">Minimalism doesn't mean cold. Learn how to combine linen, raw wood, stone, and wool to create depth without clutter.</p>
+                <div class="meta-line"><span>8 min read</span><span class="dot"></span><span>March 2026</span></div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="article-card" data-category="Architecture">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80" alt="Contemporary house with flat roof and large glass facade at dusk" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Architecture</span>
+                <h3>Understanding Passive Design: A Guide for Homeowners</h3>
+                <p class="excerpt">Orientation, thermal mass, and natural ventilation explained — how to design a home that heats and cools itself.</p>
+                <div class="meta-line"><span>12 min read</span><span class="dot"></span><span>March 2026</span></div>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="article-card" data-category="Home Design">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80" alt="Bright kitchen with marble island, wooden stools, and pendant lights" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Home Design</span>
+                <h3>Kitchen Islands: Layout, Proportion, and Function</h3>
+                <p class="excerpt">The island is the hardest-working element in a modern kitchen. Here's how to get the dimensions and circulation right.</p>
+                <div class="meta-line"><span>10 min read</span><span class="dot"></span><span>February 2026</span></div>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="article-card" data-category="Materials">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?w=800&q=80" alt="Close-up of travertine stone surface with natural veining" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Materials</span>
+                <h3>Travertine, Limestone, and the Return of Natural Stone</h3>
+                <p class="excerpt">Why architects are moving away from engineered surfaces and back to honest, geological materials.</p>
+                <div class="meta-line"><span>9 min read</span><span class="dot"></span><span>February 2026</span></div>
+              </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="article-card" data-category="Lighting">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=80" alt="Living room with warm layered lighting from floor lamp and wall sconces" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Lighting</span>
+                <h3>Layered Lighting: The Difference Between a House and a Home</h3>
+                <p class="excerpt">Ambient, task, and accent — understanding the three layers that transform how a room feels after dark.</p>
+                <div class="meta-line"><span>7 min read</span><span class="dot"></span><span>February 2026</span></div>
+              </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="article-card" data-category="Space Planning">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80" alt="Open-plan living and dining area with careful furniture placement" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Space Planning</span>
+                <h3>Circulation Matters: How to Plan Movement Through Your Home</h3>
+                <p class="excerpt">Good circulation is invisible. Bad circulation ruins a space. A practical guide to hallways, door swings, and flow.</p>
+                <div class="meta-line"><span>11 min read</span><span class="dot"></span><span>January 2026</span></div>
+              </div>
+            </article>
+
+            <!-- Card 7 -->
+            <article class="article-card" data-category="Furniture">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?w=800&q=80" alt="Mid-century modern lounge chair with leather upholstery in a bright room" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Furniture</span>
+                <h3>Investing in Forever Pieces: A Furniture Buyer's Guide</h3>
+                <p class="excerpt">How to identify well-made furniture, understand joinery, and choose pieces that age gracefully.</p>
+                <div class="meta-line"><span>13 min read</span><span class="dot"></span><span>January 2026</span></div>
+              </div>
+            </article>
+
+            <!-- Card 8 -->
+            <article class="article-card" data-category="Modern Homes">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Modern home exterior with large windows and wood cladding" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Modern Homes</span>
+                <h3>Bringing the Outside In: Designing with Nature</h3>
+                <p class="excerpt">Biophilic design is more than houseplants. Learn how light, views, and materials can connect you to the natural world.</p>
+                <div class="meta-line"><span>9 min read</span><span class="dot"></span><span>January 2026</span></div>
+              </div>
+            </article>
+
+          </div>
+
+          <div id="noResults" class="no-results hidden">No articles match your search or filter. Try a different term.</div>
+        </section>
+
+        <!-- Long-form Article 1 -->
+        <section class="long-form-article" id="interiors" data-category="Interior Design">
+          <span class="section-label">Interior Design</span>
+          <h2>The Anatomy of a Well-Proportioned Living Room</h2>
+          <div class="article-meta">
+            <span>By Elena Marchetti</span>
+            <span class="dot"></span>
+            <span>16 min read</span>
+            <span class="dot"></span>
+            <span>March 2026</span>
+          </div>
+
+          <p>The living room is the most public room in a home, yet it is also the most personal. It must accommodate conversation, relaxation, and sometimes work. When a living room feels wrong, it is rarely because of the furniture itself — it is almost always a problem of proportion, circulation, or anchoring. In this guide, we will walk through the principles that architects and interior designers use to make living rooms feel inevitable.</p>
+
+          <h3>Start with the Rug, Not the Sofa</h3>
+          <p>Most people furnish a living room by placing the largest piece first — usually the sofa against the longest wall. This is a mistake. The rug defines the conversation area. Choose a rug that is large enough for all front legs of the seating to sit on it, with at least six inches of rug extending beyond the edges of the furniture group. A rug that is too small shrinks the room and makes the furniture appear disconnected.</p>
+
+          <p>In an open-plan space, the rug becomes the boundary. It tells the body where the living area begins and ends without a wall. This is spatial psychology at work: the eye reads the rug as a field, and the furniture as objects within that field.</p>
+
+          <h3>The 12-Foot Rule for Seating Distances</h3>
+          <p>Conversation requires proximity. The ideal distance between two facing seating pieces is between 8 and 12 feet. Closer than 8 feet, and the arrangement feels cramped; farther than 12 feet, and people must raise their voices. In large rooms, break the space into two conversation zones rather than one oversized one.</p>
+
+          <div class="pull-quote">
+            "A room should feel like it has always been there — as if the walls grew around the furniture."
+          </div>
+
+          <h3>Vertical Balance and the Eye Line</h3>
+          <p>When you enter a room, your eye naturally travels to the tallest object. If that object is a bookshelf on one side and nothing on the other, the room feels lopsided. Balance vertical elements: a tall plant on one side, a floor lamp or artwork on the other. The goal is not symmetry, but visual weight distribution.</p>
+
+          <p>Art should be hung so that the center of the image sits at 57–60 inches from the floor — museum height. This is the average human eye level. Hanging art too high is one of the most common design mistakes, and it makes rooms feel disconnected from their occupants.</p>
+
+          <h3>Lighting Layers for Evening</h3>
+          <p>Overhead lighting alone creates a flat, institutional feeling. Instead, use three layers: ambient (a dimmable ceiling fixture), task (a floor lamp for reading), and accent (a small table lamp or picture light). Put them on separate switches or smart plugs so you can adjust the mood. Warm bulbs (2700K) are almost always the right choice for living spaces.</p>
+
+          <p>In the evening, turn off the overhead light entirely. The room will immediately feel more intimate. This single habit transforms how a living room feels after sunset.</p>
+
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1000&q=80" alt="Elegant living room with balanced lighting, large rug, and curated furniture arrangement" loading="lazy">
+          <p class="img-caption">A well-proportioned living room uses a large rug, layered lighting, and balanced vertical elements.</p>
+
+          <h3>Materials That Age Well</h3>
+          <p>Choose materials that improve with use. Leather softens. Wool rugs develop a patina. Solid wood shows character. Avoid materials that look best on day one and deteriorate thereafter. A living room should feel better in five years than it does today.</p>
+        </section>
+
+        <!-- Long-form Article 2 -->
+        <section class="long-form-article" id="architecture" data-category="Architecture">
+          <span class="section-label">Architecture</span>
+          <h2>Reading a Floor Plan: A Homeowner's Guide to Spatial Logic</h2>
+          <div class="article-meta">
+            <span>By James Okafor</span>
+            <span class="dot"></span>
+            <span>18 min read</span>
+            <span class="dot"></span>
+            <span>February 2026</span>
+          </div>
+
+          <p>A floor plan is a contract between the architect and the future occupant. It encodes assumptions about how you will move, gather, rest, and store. Most people can read a floor plan well enough to identify rooms, but few can read one well enough to predict how it will feel to live there. This guide will teach you the visual grammar of plans.</p>
+
+          <h3>Orientation and the Sun Path</h3>
+          <p>Before looking at walls, look for the north arrow. In the northern hemisphere, south-facing windows receive the most sun. A living room with south-facing glazing will be warm and bright; a south-facing bedroom may overheat. The best plans place living spaces on the south and service spaces (laundry, garage, storage) on the north or west.</p>
+
+          <p>In hot climates, the opposite may be true. The point is that orientation is not incidental. It is the first design decision, and it is nearly impossible to change later.</p>
+
+          <h3>Door Swings and the Space They Steal</h3>
+          <p>Every door swing removes a quarter-circle of usable floor area. A 32-inch door swinging into a small bathroom can make the room unusable. Look for doors that swing against walls rather than into the center of rooms. Pocket doors and barn doors save space but have their own trade-offs in privacy and maintenance.</p>
+
+          <h3>Circulation: The 3-Foot Rule</h3>
+          <p>Primary circulation paths — hallways and the routes between rooms — should be at least 36 inches wide. Secondary paths, such as the space between a bed and a wall, can be 24–30 inches. Kitchen work aisles should be 42–48 inches. If a plan shows narrower dimensions, it will feel tight in daily use.</p>
+
+          <h3>Closet Depth and Storage Reality</h3>
+          <p>A standard clothes closet is 24 inches deep. A coat closet needs 24–28 inches. Linen closets can be 16–18 inches. When a plan shows a closet that is 20 inches deep, it is suitable only for shallow items. Storage is one of the most underestimated aspects of home design; always check the depth.</p>
+
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1000&q=80" alt="Architectural floor plan drawings with scale ruler and pencil on a drafting table" loading="lazy">
+          <p class="img-caption">Reading a floor plan requires understanding orientation, circulation, and the dimensions behind the symbols.</p>
+
+          <h3>Windows: Size, Sill Height, and Privacy</h3>
+          <p>A window's sill height determines what you see when seated. A sill at 30 inches lets you see the garden while sitting; a sill at 42 inches blocks the view but provides wall space for furniture. In bedrooms, consider privacy: a window facing a neighbor should have a higher sill or obscured glass. In living areas, large windows should be placed to frame views, not just to admit light.</p>
+
+          <h3>Openings and Sight Lines</h3>
+          <p>Where walls end matters. A doorway placed at the end of a hallway creates a focal point. A wall that stops short of the ceiling creates visual connection between rooms. Architects use openings to choreograph movement and sight. When reviewing a plan, trace the sight lines from the front door. What do you see first? What is hidden? The sequence of reveal is part of the experience.</p>
+
+          <h3>Flexibility and Future Needs</h3>
+          <p>The best plans are adaptable. A room labeled "dining" may become a home office. A "guest room" may become a nursery. Look for rooms with multiple potential uses, and avoid plans where every square foot is over-programmed. A little excess is a feature, not a flaw.</p>
+        </section>
+
+        <!-- Long-form Article 3 -->
+        <section class="long-form-article" id="materials" data-category="Materials">
+          <span class="section-label">Materials</span>
+          <h2>A Material Palette for the Long Term: Choosing Surfaces That Endure</h2>
+          <div class="article-meta">
+            <span>By Sofia Lindqvist</span>
+            <span class="dot"></span>
+            <span>15 min read</span>
+            <span class="dot"></span>
+            <span>February 2026</span>
+          </div>
+
+          <p>Trends in materials come and go. The most sustainable choice is often the one you will not want to replace in five years. This article explores material selection through the lens of durability, maintenance, and emotional longevity.</p>
+
+          <h3>Stone and Its Honest Wear</h3>
+          <p>Marble etches; limestone stains; granite resists. Each stone has a personality. In kitchens, honed finishes hide scratches better than polished ones. In bathrooms, stone shower walls require regular sealing unless you choose a material like porcelain that mimics stone without the maintenance. The key question is not "Which is best?" but "Which wear pattern am I willing to live with?"</p>
+
+          <h3>Wood: Species, Finish, and Movement</h3>
+          <p>Oak, walnut, ash, and maple are the workhorses of interior woodwork. Oak is hard and open-grained; walnut is softer but richer in color. Engineered wood floors are dimensionally stable and can be refinished if the wear layer is thick enough (3mm or more). Solid wood floors move with humidity; this is normal, not a defect. A matte oil finish can be spot-repaired, while a polyurethane finish is more durable but harder to patch.</p>
+
+          <h3>Tile: Beyond the Subway</h3>
+          <p>Ceramic and porcelain tiles are virtually indestructible. The difference is water absorption: porcelain is denser and suitable for outdoors and wet areas. Large-format tiles (24"x48" or larger) reduce grout lines, which makes spaces feel larger and easier to clean. But they require a very flat substrate. Zellige and handmade tiles introduce variation but are harder to install and maintain.</p>
+
+          <img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?w=1000&q=80" alt="Close-up of oak wood grain and brass hardware detail in a kitchen" loading="lazy">
+          <p class="img-caption">Natural materials like oak and brass develop a patina that many designers find more beautiful over time.</p>
+
+          <h3>Metals: Living Finishes</h3>
+          <p>Brass, bronze, and copper are living finishes. They darken and spot with time. For some, this is the appeal; for others, it is a maintenance burden. Stainless steel is neutral but can look clinical. Blackened steel is dramatic but shows fingerprints. Choose metals based on how much patina you are willing to embrace.</p>
+
+          <h3>Paint and Plaster: The Fifth Wall</h3>
+          <p>Paint is the cheapest way to transform a room, but not all paints are equal. Matte finishes hide wall imperfections; satin finishes are washable. Limewash and Roman clay create depth and movement that flat paint cannot. In historic homes, plaster walls are part of the architecture; repairing them is often better than covering them with drywall.</p>
+
+          <h3>Textiles: Wool, Linen, Cotton, and Performance Fabrics</h3>
+          <p>Wool is durable, soil-resistant, and ages beautifully. Linen wrinkles — and that is part of its charm. Cotton is soft but less resilient. Performance fabrics have improved dramatically, but they still feel different from natural fibers. For upholstery, consider the Martindale rub count: 20,000 for light use, 40,000+ for heavy use.</p>
+
+          <h3>A Palette of Three</h3>
+          <p>Most successful interiors limit their primary materials to three: a base (wood or stone), a secondary (metal or plaster), and an accent (textile or glass). More than that, and the eye loses coherence. When in doubt, simplify.</p>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+          <span class="section-label">Common Questions</span>
+          <h2 class="section-heading-small">Frequently Asked Questions</h2>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What is the ideal ceiling height for a living room?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>In residential design, 9 feet is considered comfortable and generous. 8 feet is standard but can feel low in large rooms. 10–12 feet creates a more dramatic, airy feeling but requires careful furniture placement to avoid a cavernous effect. In older homes, 7.5–8 feet is common; using lighter colors and vertical elements can help.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How do I choose between an open-plan and a traditional layout?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Open plans suit households that value togetherness and entertaining, but they offer less acoustic privacy. Traditional layouts with separate rooms provide quiet and defined spaces. Many modern homes use a hybrid: an open kitchen-living area with a separate den or study. Consider how you actually live, not how you imagine you will.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What are the most common lighting mistakes in homes?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Over-reliance on a single ceiling light; using cool-white bulbs in living spaces; placing recessed lights too close to walls (causing scallops); and forgetting to dim. The fix is layers: ambient, task, and accent, all on dimmers, with warm bulbs (2700K–3000K).</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Is it worth hiring an architect for a residential renovation?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>For structural changes, additions, or projects requiring permits, an architect adds value through spatial planning, code compliance, and construction oversight. For cosmetic updates, an interior designer or a skilled contractor may suffice. The earlier you involve an architect, the more impact they can have on the design.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How can I make a small room feel larger?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Use a consistent floor material throughout, keep sight lines clear, choose furniture with exposed legs, hang curtains high and wide, and use mirrors strategically. Avoid dark colors on all walls unless the room has abundant natural light. A single large rug can make a small room feel more expansive than several small ones.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section" id="newsletter">
+          <h2>Stay Inspired</h2>
+          <p>Monthly articles on architecture, interiors, and design thinking. No spam, ever.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" id="newsletterEmail" placeholder="Your email address" aria-label="Email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+          <p id="newsletterMsg" style="margin-top: 14px; font-size: 0.85rem; color: var(--color-accent);"></p>
+        </section>
+
+        <!-- About Section -->
+        <section class="editorial-section" id="about">
+          <span class="section-label">About</span>
+          <h2>About Arcline Spatial Design</h2>
+          <p>Arcline is an independent editorial publication devoted to architecture and interior design. We publish in-depth articles for homeowners, designers, and anyone who cares about how spaces are made. Our writing is practical, researched, and free from industry hype.</p>
+          <p>We believe that good design is not about expensive materials or trendy styles. It is about proportion, light, function, and the quiet details that make a space feel right. Our contributors include practicing architects, interior designers, and writers who have spent years studying the built environment.</p>
+          <p>Arcline is reader-supported. We do not accept sponsored content. Our recommendations are based on our own experience and research.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="editorial-section" id="contact">
+          <span class="section-label">Contact</span>
+          <h2>Contact the Editorial Team</h2>
+          <p>We welcome thoughtful questions, corrections, and story ideas. Email us at <strong>hello@arclinespatial.com</strong> or use the form below. We read every message, though we may not be able to respond individually.</p>
+          <form id="contactForm" style="max-width: 560px; margin-top: 20px;">
+            <div style="margin-bottom: 16px;">
+              <label for="contactName" style="display: block; font-size: 0.85rem; font-weight: 500; margin-bottom: 6px;">Name</label>
+              <input type="text" id="contactName" required style="width: 100%; padding: 12px 16px; border: 1px solid var(--color-border); border-radius: var(--radius); font-family: var(--font-sans); font-size: 0.95rem; background: var(--color-surface);">
+            </div>
+            <div style="margin-bottom: 16px;">
+              <label for="contactEmail" style="display: block; font-size: 0.85rem; font-weight: 500; margin-bottom: 6px;">Email</label>
+              <input type="email" id="contactEmail" required style="width: 100%; padding: 12px 16px; border: 1px solid var(--color-border); border-radius: var(--radius); font-family: var(--font-sans); font-size: 0.95rem; background: var(--color-surface);">
+            </div>
+            <div style="margin-bottom: 16px;">
+              <label for="contactMessage" style="display: block; font-size: 0.85rem; font-weight: 500; margin-bottom: 6px;">Message</label>
+              <textarea id="contactMessage" rows="5" required style="width: 100%; padding: 12px 16px; border: 1px solid var(--color-border); border-radius: var(--radius); font-family: var(--font-sans); font-size: 0.95rem; background: var(--color-surface); resize: vertical;"></textarea>
+            </div>
+            <button type="submit" style="background: var(--color-ink); color: #fff; border: none; padding: 14px 32px; border-radius: 40px; font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.04em; cursor: pointer;">Send Message</button>
+            <p id="contactMsg" style="margin-top: 14px; font-size: 0.85rem; color: var(--color-accent);"></p>
+          </form>
+        </section>
+
+        <!-- Privacy / Terms / Cookies -->
+        <section class="editorial-section" id="privacy">
+          <span class="section-label">Legal</span>
+          <h2>Privacy Policy</h2>
+          <p>Arcline Spatial Design respects your privacy. We collect only the information you voluntarily provide (such as your email address for our newsletter). We do not sell or share your data with third parties. Our website uses no tracking cookies beyond what is necessary for basic functionality.</p>
+          <h3>Terms of Use</h3>
+          <p>All content on this website is for informational purposes only. You may not reproduce our articles without permission. Links to third-party sites are provided for convenience; we are not responsible for their content.</p>
+          <h3>Cookie Policy</h3>
+          <p>We use minimal cookies to remember your filter preferences. No personal data is stored in cookies. You can disable cookies in your browser settings at any time.</p>
+        </section>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="sidebar" aria-label="Sidebar">
+        <div class="sidebar-widget">
+          <h3>Editor's Picks</h3>
+          <ul>
+            <li><a href="#interiors">The Anatomy of a Well-Proportioned Living Room</a><span class="meta-small">Interior Design · 16 min</span></li>
+            <li><a href="#architecture">Reading a Floor Plan: A Homeowner's Guide</a><span class="meta-small">Architecture · 18 min</span></li>
+            <li><a href="#materials">A Material Palette for the Long Term</a><span class="meta-small">Materials · 15 min</span></li>
+            <li><a href="#lighting">Layered Lighting: House vs. Home</a><span class="meta-small">Lighting · 7 min</span></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3>About the Editor</h3>
+          <div class="editor-box">
+            <img class="editor-avatar" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&h=120&fit=crop&crop=face" alt="Portrait of Elena Marchetti, Editor-in-Chief" loading="lazy">
+            <div class="editor-info">
+              <h4>Elena Marchetti</h4>
+              <p>Editor-in-Chief. Architect and writer based in Milan. Elena has over 15 years of experience in residential and adaptive reuse projects.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3>Popular Topics</h3>
+          <ul>
+            <li><a href="#articles">Small Space Living</a></li>
+            <li><a href="#articles">Natural Materials</a></li>
+            <li><a href="#articles">Passive House Design</a></li>
+            <li><a href="#articles">Kitchen Renovation</a></li>
+            <li><a href="#articles">Lighting Design</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3>Newsletter</h3>
+          <p style="font-size:0.85rem; margin-bottom: 14px;">Get our monthly digest of the best in architecture and design writing.</p>
+          <form id="sidebarNewsletterForm" style="display: flex; flex-direction: column; gap: 10px;">
+            <input type="email" id="sidebarEmail" placeholder="Email address" required style="padding: 10px 14px; border: 1px solid var(--color-border); border-radius: var(--radius); font-family: var(--font-sans); font-size: 0.85rem; background: var(--color-bg);">
+            <button type="submit" style="background: var(--color-ink); color: #fff; border: none; padding: 10px 14px; border-radius: var(--radius); font-family: var(--font-sans); font-size: 0.8rem; font-weight: 600; cursor: pointer;">Subscribe</button>
+          </form>
+          <p id="sidebarMsg" style="font-size:0.75rem; color: var(--color-accent); margin-top: 8px;"></p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <span class="brand-name">Arcline</span>
+            <span class="brand-dot"></span>
+          </div>
+          <p>Independent architecture and interior design journalism. Published monthly from our studio in Copenhagen.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#interiors">Interior Design</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#materials">Materials</a></li>
+            <li><a href="#lighting">Lighting</a></li>
+            <li><a href="#articles">Modern Homes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#privacy">Terms of Use</a></li>
+            <li><a href="#privacy">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS Feed</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Arcline Spatial Design. All rights reserved.</span>
+        <div class="legal-links">
+          <a href="#privacy">Privacy</a>
+          <a href="#privacy">Terms</a>
+          <a href="#privacy">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      'use strict';
+
+      // --- Mobile nav toggle ---
+      const navToggle = document.getElementById('navToggle');
+      const navMain = document.getElementById('navMain');
+      if (navToggle) {
+        navToggle.addEventListener('click', function() {
+          navMain.classList.toggle('open');
+        });
+      }
+
+      // --- FAQ Accordion ---
+      const faqQuestions = document.querySelectorAll('.faq-question');
+      faqQuestions.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          const answer = this.nextElementSibling;
+          const isOpen = this.classList.contains('open');
+          // Close all others
+          faqQuestions.forEach(function(other) {
+            if (other !== btn) {
+              other.classList.remove('open');
+              other.setAttribute('aria-expanded', 'false');
+              other.nextElementSibling.classList.remove('open');
+            }
+          });
+          // Toggle current
+          if (isOpen) {
+            this.classList.remove('open');
+            this.setAttribute('aria-expanded', 'false');
+            answer.classList.remove('open');
+          } else {
+            this.classList.add('open');
+            this.setAttribute('aria-expanded', 'true');
+            answer.classList.add('open');
+          }
+        });
+      });
+
+      // --- Newsletter forms ---
+      const newsletterForm = document.getElementById('newsletterForm');
+      const newsletterMsg = document.getElementById('newsletterMsg');
+      if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const email = document.getElementById('newsletterEmail').value.trim();
+          if (email) {
+            newsletterMsg.textContent = 'Thank you — you are subscribed.';
+            document.getElementById('newsletterEmail').value = '';
+          }
+        });
+      }
+
+      const sidebarForm = document.getElementById('sidebarNewsletterForm');
+      const sidebarMsg = document.getElementById('sidebarMsg');
+      if (sidebarForm) {
+        sidebarForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const email = document.getElementById('sidebarEmail').value.trim();
+          if (email) {
+            sidebarMsg.textContent = 'Subscribed!';
+            document.getElementById('sidebarEmail').value = '';
+          }
+        });
+      }
+
+      // --- Contact form ---
+      const contactForm = document.getElementById('contactForm');
+      const contactMsg = document.getElementById('contactMsg');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          contactMsg.textContent = 'Message sent. We will reply within a few days.';
+          contactForm.reset();
+        });
+      }
+
+      // --- Search & Filter ---
+      const searchInput = document.getElementById('searchInput');
+      const searchBtn = document.getElementById('searchBtn');
+      const filterPills = document.getElementById('filterPills');
+      const articleGrid = document.getElementById('articleGrid');
+      const noResults = document.getElementById('noResults');
+      const allCards = Array.from(document.querySelectorAll('.article-card'));
+      const longFormArticles = Array.from(document.querySelectorAll('.long-form-article'));
+      const featured = document.querySelector('.featured-article');
+
+      let activeCategory = 'all';
+      let searchTerm = '';
+
+      function filterArticles() {
+        let visibleCount = 0;
+
+        // Combine all searchable article units (cards + long-form + featured)
+        const allUnits = [
+          ...allCards.map(c => ({ el: c, type: 'card' })),
+          ...longFormArticles.map(c => ({ el: c, type: 'longform' }))
+        ];
+
+        if (featured) {
+          allUnits.push({ el: featured, type: 'featured' });
+        }
+
+        allUnits.forEach(function(unit) {
+          const el = unit.el;
+          const category = (el.dataset.category || '').toLowerCase();
+
+          // Get text content
+          let textContent = '';
+          if (unit.type === 'card') {
+            textContent = el.querySelector('.card-body') ? el.querySelector('.card-body').textContent.toLowerCase() : el.textContent.toLowerCase();
+          } else if (unit.type === 'longform') {
+            textContent = el.textContent.toLowerCase();
+          } else if (unit.type === 'featured') {
+            textContent = el.textContent.toLowerCase();
+          }
+
+          const matchesCategory = activeCategory === 'all' || category === activeCategory.toLowerCase();
+          const matchesSearch = searchTerm === '' || textContent.includes(searchTerm);
+
+          if (matchesCategory && matchesSearch) {
+            el.classList.remove('hidden');
+            if (unit.type === 'card') visibleCount++;
+            if (unit.type === 'longform') visibleCount++;
+            if (unit.type === 'featured') visibleCount++;
+          } else {
+            el.classList.add('hidden');
+          }
+        });
+
+        // Show no results message if nothing visible (except featured might be hidden)
+        const anyVisible = document.querySelector('.article-card:not(.hidden), .long-form-article:not(.hidden)');
+        if (!anyVisible) {
+          noResults.classList.remove('hidden');
+        } else {
+          noResults.classList.add('hidden');
+        }
+      }
+
+      // Filter pills
+      if (filterPills) {
+        filterPills.addEventListener('click', function(e) {
+          const btn = e.target.closest('button');
+          if (!btn) return;
+          filterPills.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeCategory = btn.dataset.category || 'all';
+          filterArticles();
+        });
+      }
+
+      // Search
+      function performSearch() {
+        searchTerm = searchInput.value.trim().toLowerCase();
+        filterArticles();
+      }
+
+      if (searchBtn) {
+        searchBtn.addEventListener('click', performSearch);
+      }
+      if (searchInput) {
+        searchInput.addEventListener('keyup', function(e) {
+          if (e.key === 'Enter') {
+            performSearch();
+          }
+        });
+        // Live search (optional)
+        searchInput.addEventListener('input', function() {
+          searchTerm = this.value.trim().toLowerCase();
+          filterArticles();
+        });
+      }
+
+      // Initial filter (show all)
+      filterArticles();
+
+      // --- Smooth scrolling for internal links (native CSS handles it, but ensure active nav updates) ---
+      const navLinks = document.querySelectorAll('.nav-main a');
+      navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          navLinks.forEach(l => l.classList.remove('active'));
+          this.classList.add('active');
+          // Close mobile nav
+          if (navMain.classList.contains('open')) {
+            navMain.classList.remove('open');
+          }
+        });
+      });
+
+      // --- Update active nav on scroll (simple) ---
+      const sections = document.querySelectorAll('section[id]');
+      window.addEventListener('scroll', function() {
+        let current = '';
+        sections.forEach(function(section) {
+          const sectionTop = section.offsetTop - 120;
+          if (window.scrollY >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+        navLinks.forEach(function(link) {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active');
+          }
+        });
+      });
+
+    })();
+  </script>
+</body>
+</html>
